@@ -8,6 +8,7 @@ const Heading = () => {
         {title:'Home', href:'/'},
         {title:'Cart', href:'/cart'},
         {title:'Categories', href:'/categories'},
+        {title:'Products', href:'/products'},
         {title:'Favorite', href:'/favorite'},
 
     ]
@@ -26,7 +27,6 @@ const Heading = () => {
                 </ul>
 
             </div>
-            <button className="text-xl text-white border border-orange-600 w-20 h-10 rounded-md hover:bg-orange-600">Login</button>
             </div>
       </Container>
         </header>

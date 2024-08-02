@@ -1,10 +1,16 @@
+import Container from '@/components/Container';
+import Title from '@/components/Title';
+import Link from 'next/link';
 import React from 'react';
 
 const Homepage = () => {
+    const id = 24343
     return (
-        <div>
-            <h1>Home page</h1>
-        </div>
+        <Container className='my-6'>
+            <Title title='home page'/>
+            <Link href={`/products/${id}`} className='text-xl text-blue-700'>Single Products</Link>
+            <p className='text-md tracking-wide mt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque dolor accusantium recusandae unde deserunt nihil, labore sunt exercitationem obcaecati reprehenderit autem delectus harum placeat id odit dolores nisi ad porro quis fuga sapiente consequatur dicta voluptas. Ad, voluptatibus? Nesciunt quasi eveniet, quae, qui quaerat maxime numquam quibusdam aspernatur soluta dolore id doloremque, aut vel illum quam sit. Vero autem nam maxime dolores. Neque nam, distinctio, ipsum amet ex eius nihil officiis architecto repudiandae, tempora temporibus deserunt cumque dicta quam non.</p>
+        </Container>
     );
 };
 
