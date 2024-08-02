@@ -12,17 +12,17 @@ const Heading = () => {
     return (
           <header className="bg-green-900">
       <Container >
-            <div className="flex justify-between p-6">
-            <h1>E-Bazar</h1>
+            <div className="flex justify-between items-center p-6">
+            <h1 className="text-xl text-white font-semibold"><span className="text-orange-600">E-</span>Bazar</h1>
             <div>
-                <ul className="space-x-6">
+                <ul className="space-x-6 ">
                     {navigation.map(item=>
-                        <Link href={item.href} key={item.title}>{item.title}</Link>
+                        <Link className="text-white hover:text-orange-600" href={item.href} key={item.title}>{item.title}</Link>
                     )}
                 </ul>
 
             </div>
-            <button>Login</button>
+            <button className="text-xl text-white border border-orange-600 w-20 h-10 rounded-md hover:bg-orange-600">Login</button>
             </div>
       </Container>
         </header>
